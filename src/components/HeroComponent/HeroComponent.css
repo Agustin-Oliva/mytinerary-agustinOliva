@@ -1,0 +1,12 @@
+.hero-cont{
+    position: relative;
+    background-image: url('https://www.patagoniatraveler.com/images/modulos/turismo/categorias/41/galeria/1260_Naturaleza-y-paisajes-ok.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.mask{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 400px;
+
+}
