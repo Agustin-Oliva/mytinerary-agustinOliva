@@ -1,4 +1,5 @@
 import "./Footer.css"
+import {link as Anchor} from "react-router-dom"
 
 function Footer(){
     return (
@@ -12,7 +13,7 @@ function Footer(){
                 <p>Todos los derechos Reservados 2023 - Agustin Oliva</p>
             </div>
             <div>
-                <a className="link-home" href="#">Volver al Inicio</a>
+                <Anchor className="link-home" to={'/'}>Volver al Inicio</Anchor>
             </div>
             
         </footer>

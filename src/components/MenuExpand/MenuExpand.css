@@ -11,14 +11,14 @@
     display: flex;
 
 }
-.expand-item a{
+.expand-item{
     text-decoration: none;
     color: black;
     padding: 5px;
     font-size: 1.1rem;
 }
 
-.expand-item a:hover{
+.expand-item:hover{
     color: rgb(43, 187, 91);
 }
 

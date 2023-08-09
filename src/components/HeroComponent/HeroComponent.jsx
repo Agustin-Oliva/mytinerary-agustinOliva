@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeroComponent.css'
+import { Link as Anchor } from 'react-router-dom';
 
 
     function HeroComponent() {
@@ -11,7 +12,7 @@ import './HeroComponent.css'
             <div className='text-white'>
               <h1 className='mb-3'>MyTinerary</h1>
               <p className='mb-3'>Find your perfect trip, designed by insiders who know and love their cities!</p>
-              <a className='btn btn-outline-light btn-lg hero-text' href='#!' role='button'>Find your Next Destination</a>
+              <Anchor className='btn btn-outline-light btn-lg hero-text' to={"/Cities"} role='button'>Find your Next Destination</Anchor>
             </div>
           </div>
         </div>

@@ -1,4 +1,15 @@
 
 .dropdown-link:hover{
     background-color: rgb(43, 187, 91) !important; 
+    width: 100%;
+    text-align: center;
+}
+.dropdown-list{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+}
+.dropdown-link{
+    text-decoration: none;
+    color: #000;
 }

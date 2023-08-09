@@ -2,20 +2,21 @@ import ButtonDropdown from '../../components/ButtonDropdown/ButtonDropdown'
 import MenuExpand from '../../components/MenuExpand/MenuExpand'
 import HeroComponent from '../../components/HeroComponent/HeroComponent'
 import Footer from '../../components/Footer/Footer'
-import Carousel from '../../components/Carousel/Carousel'
 import './LayoutMain.css'
+import { Outlet } from 'react-router-dom'
+import { Link as Anchor } from 'react-router-dom'
 
 
-const LayoutMain = (props) =>{ 
+
+const LayoutMain = () =>{ 
     return (
         <>
          <header className='header'>
             <nav className='container-nav'>
                 <div className='nav-logo'>
-                    <a href="#">MyTinerary</a>
+                <Anchor to={'/'}>MyTinerary</Anchor>
                 </div>
                 <MenuExpand/>
-                <ButtonDropdown/>
             </nav>
         <section className='Hero-section'>
             <HeroComponent/>
@@ -23,7 +24,7 @@ const LayoutMain = (props) =>{
         </header>
 
         <main className='main'>
-            <Carousel/>
+          <Outlet/>
         </main>
 
         <Footer/>

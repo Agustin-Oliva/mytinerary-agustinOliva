@@ -67,18 +67,20 @@ function Carousel(){
     }
     return(
         <>
-        <section className='carousel-container'>
+        {<section className='carousel-container'>
             <BtnResponsive func = {handleClickBack} funcDos = {handleClickNext}/>
          <button className="carousel-btn btn-left" onClick={handleClickBack}>{'<'}</button>
          
             <div className="img-cont">
              <div className="carousel-img cont-bottom">
-             {destinations[position].map(pos =><img className="country-carousel" src={pos.img} alt="country" key={pos.country} />)}
+             {destinations[position].map(pos =><img className="country-carousel" src={pos.img} alt="country" key={pos.country}/>    
+            )}
              </div>
             </div>
          <button className="carousel-btn btn-right" onClick={handleClickNext}>{'>'}</button>
          <BtnResponsive func = {handleClickBack} funcDos = {handleClickNext}/>
-        </section>
+        </section> }
+        
         </>
     )
 }
