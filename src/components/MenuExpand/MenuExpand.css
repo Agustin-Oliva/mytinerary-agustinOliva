@@ -2,6 +2,7 @@
     display: flex;
     width: 50%;
     justify-content: flex-end;
+    align-items: center;
 
 }
 
@@ -17,9 +18,16 @@
     font-size: 1.1rem;
 }
 
+.expand-item a:hover{
+    color: rgb(43, 187, 91);
+}
+
 .expand-login{
     background-color: rgb(43, 187, 91);
     border-radius: 5px;
+}
+.expand-login:hover{
+    background-color: black;
 }
 
 .expand-img{

@@ -11,7 +11,7 @@ import './HeroComponent.css'
             <div className='text-white'>
               <h1 className='mb-3'>MyTinerary</h1>
               <p className='mb-3'>Find your perfect trip, designed by insiders who know and love their cities!</p>
-              <a className='btn btn-outline-light btn-lg' href='#!' role='button'>Find your Next Destination</a>
+              <a className='btn btn-outline-light btn-lg hero-text' href='#!' role='button'>Find your Next Destination</a>
             </div>
           </div>
         </div>

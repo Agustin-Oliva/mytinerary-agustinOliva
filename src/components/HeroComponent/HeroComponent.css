@@ -10,3 +10,9 @@
     height: 400px;
 
 }
+
+.hero-text:hover{
+    color: rgb(43, 187, 91) !important;
+    transition: all 1s;
+
+}
