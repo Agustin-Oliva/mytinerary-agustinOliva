@@ -1,7 +1,7 @@
 import "./Carousel.css"
 import React from "react"
 import BtnResponsive from "../BtnCarouselResponsive/BtnCarouselResponsive"
-import { useState } from "react"
+import { useState, useEffect} from "react"
 
 function Carousel(){
     const destinations = [ [
@@ -63,8 +63,19 @@ function Carousel(){
             setPosition(position = 0)
         } else{
             setPosition(position + 1)
-        }
+        }    
     }
+    const autoAdvance = () => {
+        handleClickNext();
+      }
+
+      useEffect(() => {
+        const intervalId = setInterval(autoAdvance, 5000); 
+    
+        return () => {
+          clearInterval(intervalId);
+        };
+      }, []);
     return(
         <>
         {<section className='carousel-container'>
@@ -85,14 +96,3 @@ function Carousel(){
     )
 }
 export default Carousel
-
-
-{/*  <div className="carousel-img cont-top">
-     {<img src={destinations[position][0].img} alt="country" />}
-     {<img src={destinations[position][1].img} alt="country" />}
- </div>
-
- <div className="carousel-img cont-bottom">
-     {<img src={destinations[position][2].img} alt="country" />}
-     {<img src={destinations[position][3].img} alt="country" />}
- </div> */}
