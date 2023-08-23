@@ -1,0 +1,14 @@
+.cont-cities{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.card-fetch{
+    margin: 10px;
+}
+
+.city-tittle{
+    text-align: center;
+}

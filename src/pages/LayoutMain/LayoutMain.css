@@ -27,7 +27,7 @@
     transition: all 1s;
 }
 
-.main{
+/* .main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,7 +36,7 @@
     flex-grow: 1;
     align-items: center;
     min-height: 100%;
-}
+} */
 @media (min-width:600px){
     .nav-dropdown{
         display: none;

@@ -10,10 +10,10 @@ function Footer(){
             <a href="#"><img className="img-logo" src="../../public/whatsapp.png" alt="" /></a>
             </div>
             <div>
-                <p>Todos los derechos Reservados 2023 - Agustin Oliva</p>
+                <p>All rights reserved - Agustin Oliva</p>
             </div>
             <div>
-                <Anchor className="link-home" to={'/'}>Volver al Inicio</Anchor>
+                <Anchor className="link-home" to={'/'}>Back to Home</Anchor>
             </div>
             
         </footer>
