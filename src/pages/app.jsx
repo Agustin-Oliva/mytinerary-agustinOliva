@@ -3,7 +3,7 @@ import HomePage from "./HomePage/HomePage"
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import LayoutMain from './LayoutMain/LayoutMain'
 import Cities from './CitiesPage/Cities'
-Cities
+
 
 function App() {
     const router = createBrowserRouter([
